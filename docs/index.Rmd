@@ -12,7 +12,7 @@ knitr::opts_chunk$set(echo = TRUE)
 Packages used: 
 
 ```{r}
-library(topogRam) # topogRam_0.2.9300
+library(topogram)
 library(sf)
 library(rmapshaper)
 ```
@@ -36,7 +36,7 @@ nz_retail <- ms_simplify(nz_retail)
 ## Cartogram
 
 ```{r}
-topogRam(
+topogram(
   shape = nz_retail,
   value = c("Per_capita", "Per_capi_1", "Per_capi_2", "Per_capi_3",
             "Per_capi_4", "Per_capi_5", "Total_trad", "Total_tr_1", "Total_tr_2",
